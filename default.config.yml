@@ -91,11 +91,6 @@ homebrew_cask_apps:
   - vagrant
   - skype
 
-# See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
-mas_email: ""
-mas_password: ""
-
 osx_script: "~/.osx --no-restart"
 
 # Install packages from other package managers.

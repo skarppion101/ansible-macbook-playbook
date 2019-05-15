@@ -25,7 +25,7 @@ This is a work in progress, and is mostly a means for me to document my current 
 
 ### Running a specific set of tagged tasks
 
-You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are `dotfiles`, `homebrew`, `mas`, `extra-packages` and `osx`.
+You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are `dotfiles`, `homebrew`, `extra-packages` and `osx`.
 
     ansible-playbook main.yml -i inventory -K --tags "dotfiles,homebrew"
 
@@ -39,12 +39,6 @@ You can override any of the defaults configured in `default.config.yml` by creat
       - cowsay
       - git
       - go
-    
-    mas_installed_apps:
-      - { id: 443987910, name: "1Password" }
-      - { id: 498486288, name: "Quick Resizer" }
-      - { id: 557168941, name: "Tweetbot" }
-      - { id: 497799835, name: "Xcode" }
     
     composer_packages:
       - name: hirak/prestissimo
