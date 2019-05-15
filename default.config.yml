@@ -33,7 +33,6 @@ homebrew_installed_packages:
   - sqlite
   - mcrypt
   - nmap
-  - node
   - nvm
   - php
   - ssh-copy-id
@@ -50,20 +49,32 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
+  - vk-messenger
+  - 1password-beta
+  - sublime-text
   - docker
   - dropbox
-  - firefox
-  - google-chrome
+  - firefox-developer-edition
+  - google-chrome-beta
+  - google-cloud-sdk
+  - iina
+  - keka
+  - jetbrains-toolbox
+  - macdown
+  - steam
+  - charles
+  - tunnelblick
+  - 4k-video-downloader
+  - android-file-transfer
+  - nosleep
+  - shazam
+  - teamviewer
+  - tor-browser
+  - zeplin
+  - postman
+  - tunnelbear
+  - chromedriver
   - handbrake
-  - licecap
-  - limechat
-  - macvim
-  - sequel-pro
-  - skitch
-  - slack
-  - sublime-text
-  - transmit
   - vagrant
 
 # See `geerlingguy.mas` role documentation for usage instructions.
