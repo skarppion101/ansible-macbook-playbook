@@ -24,6 +24,7 @@ homebrew_installed_packages:
   - gettext
   - gifsicle
   - git
+  - gcc
   - go
   - gpg
   - hub
@@ -36,12 +37,26 @@ homebrew_installed_packages:
   - nvm
   - php
   - ssh-copy-id
-  - cowsay
-  - readline
   - openssl
-  - pv
   - wget
-  - wrk
+  - thefuck
+  - xvid
+  - vim
+  - yasm
+  - youtube-dl
+  - unrar
+  - netdata
+  - pkg-config
+  - perl
+  - libuv
+  - jpeg
+  - watchman
+  - imagemagick
+  - ffmpeg
+  - fontconfig
+  - freetype
+  - faac
+  - git-flow
 
 homebrew_taps:
   - homebrew/core
@@ -74,6 +89,7 @@ homebrew_cask_apps:
   - tunnelbear
   - handbrake
   - vagrant
+  - skype
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
