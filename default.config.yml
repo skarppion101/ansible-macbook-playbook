@@ -72,7 +72,6 @@ homebrew_cask_apps:
   - zeplin
   - postman
   - tunnelbear
-  - chromedriver
   - handbrake
   - vagrant
 
