@@ -57,6 +57,11 @@ homebrew_installed_packages:
   - freetype
   - faac
   - git-flow
+  - usbmuxd
+  - libimobiledevice
+  - ideviceinstaller
+  - ios-deploy
+  - cocoapods
 
 homebrew_taps:
   - homebrew/core
