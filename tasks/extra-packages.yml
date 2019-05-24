@@ -15,7 +15,7 @@
     global: yes
     executable: "{{ item.executable | default(omit) }}"
   with_items: "{{ npm_packages }}"
-#  tags: ['always']
+  tags: ['always']
 
 - name: Install global Yarn packages.
   shell: "yarn global add --non-interactive --no-emoji {{ item.name }}"

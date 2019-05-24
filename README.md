@@ -8,7 +8,7 @@ This playbook installs and configures most of the software I use on my Mac for w
   2. [Install Homebrew](https://brew.sh).
   3. Install Ansible via `brew install ansible`
   3. Clone this repository.
-  4. Run `ANSIBLE_ROLES_PATH=./roles ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
+  4. Run `ansible-playbook main.yml -i inventory -K` inside this directory. Enter your account password when prompted.
 
 > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 
@@ -16,7 +16,7 @@ This playbook installs and configures most of the software I use on my Mac for w
 
 You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are `dotfiles`, `homebrew`, `extra-packages` and `osx`.
 
-    ANSIBLE_ROLES_PATH=./roles ansible-playbook main.yml -i inventory -K --tags "dotfiles,homebrew"
+    ansible-playbook main.yml -i inventory -K --tags "dotfiles,homebrew"
 
 ## Overriding Defaults
 

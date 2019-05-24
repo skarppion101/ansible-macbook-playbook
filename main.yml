@@ -14,21 +14,21 @@
   roles:
     - role: geerlingguy.homebrew
       tags: ['homebrew']
-    - role: geerlingguy.dotfiles
-      when: configure_dotfiles
+    - role: dotfiles
+      when: configure_dotfiles | bool
       tags: ['dotfiles']
 
   tasks:
     - include_tasks: tasks/ansible-setup.yml
 
     - include_tasks: tasks/sudoers.yml
-      when: configure_sudoers
+      when: configure_sudoers | bool
 
     - include_tasks: tasks/terminal.yml
-      when: configure_terminal
+      when: configure_terminal | bool
 
     - include_tasks: tasks/osx.yml
-      when: configure_osx
+      when: configure_osx | bool
       tags: ['osx']
 
     - include_tasks: tasks/extra-packages.yml
