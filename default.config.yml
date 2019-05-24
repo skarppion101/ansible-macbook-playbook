@@ -19,6 +19,7 @@ dotfiles_files:
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
+  - ansible-lint
   - node
   - highlight
   - bash-completion
