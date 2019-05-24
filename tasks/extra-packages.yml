@@ -3,9 +3,9 @@
   composer:
     command: "{{ (item.state | default('present') == 'absent') | ternary('remove', 'require') }}"
     arguments: "{{ item.name | default(item) }} {{ item.version | default('@stable') }}"
-    # Ansible 2.4 supports `global_command` making `working_dir` optional.
     working_dir: "{{ lookup('env', 'COMPOSER_HOME') | default('~/.composer', true) }}"
   with_items: "{{ composer_packages }}"
+  tags: ['always']
 
 - name: Install global NPM packages.
   npm:
@@ -15,6 +15,12 @@
     global: yes
     executable: "{{ item.executable | default(omit) }}"
   with_items: "{{ npm_packages }}"
+#  tags: ['always']
+
+- name: Install global Yarn packages.
+  shell: "yarn global add --non-interactive --no-emoji {{ item.name }}"
+  with_items: "{{ yarn_packages }}"
+  tags: ['always']
 
 - name: Install global Pip packages.
   pip:
@@ -23,6 +29,7 @@
     version: "{{ item.version | default(omit) }}"
     executable: "{{ item.executable | default(omit) }}"
   with_items: "{{ pip_packages }}"
+  tags: ['always']
 
 - name: Install global Ruby gems.
   gem:
@@ -32,3 +39,4 @@
     user_install: no
     executable: "{{ item.executable | default(omit) }}"
   with_items: "{{ gem_packages }}"
+  tags: ['always']

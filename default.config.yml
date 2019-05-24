@@ -19,6 +19,8 @@ dotfiles_files:
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
+  - node
+  - highlight
   - bash-completion
   - doxygen
   - gettext
@@ -112,8 +114,18 @@ gem_packages: []
   # - name: bundler
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
-  # - name: webpack
+npm_packages:
+  - name: yarn
+  # - name: yarn
+  #   state: present # present/absent/latest, default: present
+  #   version: "^2.6" # default: N/A
+yarn_packages:
+  - name: bower
+  - name: pm2
+  - name: typescript
+  - name: vtop
+  - name: node-sass
+  # - name: yarn
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
 pip_packages: []

@@ -16,7 +16,7 @@ This playbook installs and configures most of the software I use on my Mac for w
 
 You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are `dotfiles`, `homebrew`, `extra-packages` and `osx`.
 
-    ansible-playbook main.yml -i inventory -K --tags "dotfiles,homebrew"
+    ANSIBLE_ROLES_PATH=./roles ansible-playbook main.yml -i inventory -K --tags "dotfiles,homebrew"
 
 ## Overriding Defaults
 
@@ -46,7 +46,7 @@ You can override any of the defaults configured in `default.config.yml` by creat
 
 Any variable can be overridden in `config.yml`; see the supporting roles' documentation for a complete list of available variables.
 
-My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
+My [dotfiles](https://github.com/skarppion101/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
@@ -64,35 +64,6 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
   6. Set mouse tracking rate.
   7. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
 
-### Applications/packages to be added:
-
-These are mostly direct download links, some are more difficult to install because of custom installers or other nonstandard install quirks:
-
-  - [iShowU HD](http://www.shinywhitebox.com/downloads/iShowU_HD_2.3.20.dmg)
-  - [Adobe Creative Cloud](http://www.adobe.com/creativecloud.html)
-
-### Configuration to be added:
-
-  - I have vim configuration in the repo, but I still need to add the actual installation:
-    ```
-    mkdir -p ~/.vim/autoload
-    mkdir -p ~/.vim/bundle
-    cd ~/.vim/autoload
-    curl https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim > pathogen.vim
-    cd ~/.vim/bundle
-    git clone git://github.com/scrooloose/nerdtree.git
-    ```
-
-## Testing the Playbook
-
-Many people have asked me if I often wipe my entire workstation and start from scratch just to test changes to the playbook. Nope! Instead, I posted instructions for how I build a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm), on which I can continually run and re-run this playbook to test changes and make sure things work correctly.
-
-Additionally, this project is [continuously tested on Travis CI's macOS infrastructure](https://travis-ci.org/geerlingguy/mac-dev-playbook).
-
 ## Ansible for DevOps
 
 Check out [Ansible for DevOps](https://www.ansiblefordevops.com/), which teaches you how to automate almost anything with Ansible.
-
-## Author
-
-[Jeff Geerling](https://www.jeffgeerling.com/), 2014 (originally inspired by [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks)).
