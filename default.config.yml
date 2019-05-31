@@ -29,6 +29,7 @@ homebrew_installed_packages:
   - git
   - gcc
   - go
+  - consul
   - gpg
   - hub
   - httpie
