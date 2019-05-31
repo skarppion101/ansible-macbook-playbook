@@ -71,6 +71,7 @@ homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - spectralkh/tap
+  - homebrew/cask-versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
