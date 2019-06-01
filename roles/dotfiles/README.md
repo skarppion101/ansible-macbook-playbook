@@ -8,29 +8,6 @@ Installs a set of dotfiles from a given Git repository. By default, it will inst
 
 Requires `git` on the managed machine (you can easily install it with `geerlingguy.git` if required).
 
-## Role Variables
-
-Available variables are listed below, along with default values (see `defaults/main.yml`):
-
-    dotfiles_repo: "https://github.com/geerlingguy/dotfiles.git"
-
-Add the hostkey for the repo url if not already added. If ssh_opts contains "-o StrictHostKeyChecking=no", this parameter is ignored.
-
-    dotfiles_repo_local_destination: "~/Documents/dotfiles"
-
-The local path where the `dotfiles_repo` will be cloned.
-
-    dotfiles_home: "~"
-
-The home directory where dotfiles will be linked. Generally, the default should work, but in some circumstances, or when running the role as sudo on behalf of another user, you may want to specify the full path.
-
-    dotfiles_files:
-      - .bash_profile
-      - .gitignore
-      - .inputrc
-      - .vimrc
-
-Which files from the dotfiles repository should be linked to the `dotfiles_home`.
 
 ## Dependencies
 
