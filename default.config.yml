@@ -101,7 +101,7 @@ homebrew_cask_apps:
   - vagrant
   - skype
 
-osx_script: "~/.osx --no-restart"
+osx_script: "~/.osx.sh --no-restart"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
