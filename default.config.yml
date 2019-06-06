@@ -17,6 +17,7 @@ homebrew_installed_packages:
   - autoconf
   - ansible-lint
   - node
+  - curl
   - highlight
   - bash-completion
   - doxygen
