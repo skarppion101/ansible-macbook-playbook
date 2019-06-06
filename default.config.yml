@@ -81,6 +81,7 @@ homebrew_cask_apps:
   - sublime-text
   - docker
   - dropbox
+  - zoomus
   - firefox-developer-edition
   - google-chrome-beta
   - google-cloud-sdk
