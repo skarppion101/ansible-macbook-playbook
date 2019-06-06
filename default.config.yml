@@ -35,7 +35,6 @@ homebrew_installed_packages:
   - sqlite
   - mcrypt
   - nmap
-  - nvm
   - php
   - ssh-copy-id
   - openssl
