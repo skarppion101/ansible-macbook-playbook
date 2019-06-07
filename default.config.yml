@@ -89,6 +89,7 @@ homebrew_cask_apps:
   - jetbrains-toolbox
   - macdown
   - steam
+  - battle-net
   - charles
   - tunnelblick
   - 4k-video-downloader
