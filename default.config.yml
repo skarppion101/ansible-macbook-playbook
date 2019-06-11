@@ -26,6 +26,7 @@ homebrew_installed_packages:
   - git
   - gcc
   - go
+  - scala
   - consul
   - gpg
   - hub
@@ -53,6 +54,7 @@ homebrew_installed_packages:
   - watchman
   - imagemagick
   - ffmpeg
+  - sbt
   - fontconfig
   - freetype
   - faac
@@ -85,6 +87,7 @@ homebrew_cask_apps:
   - google-chrome-beta
   - google-cloud-sdk
   - iina
+  - java
   - keka
   - jetbrains-toolbox
   - macdown
