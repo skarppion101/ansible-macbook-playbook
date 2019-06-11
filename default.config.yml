@@ -69,7 +69,6 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
-  - homebrew/science
   - spectralkh/tap
   - homebrew/cask-versions
 
