@@ -27,6 +27,7 @@ homebrew_installed_packages:
   - gcc
   - go
   - scala
+  - erlang
   - consul
   - gpg
   - hub
@@ -68,6 +69,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/science
   - spectralkh/tap
   - homebrew/cask-versions
 
@@ -81,6 +83,7 @@ homebrew_cask_apps:
   - 1password-beta
   - sublime-text
   - docker
+  - xquartz
   - dropbox
   - zoomus
   - firefox-developer-edition
