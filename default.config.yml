@@ -134,6 +134,9 @@ yarn_packages:
   - name: typescript
   - name: vtop
   - name: node-sass
+  - name: @angular/cli
+  - name: gatsby-cli
+  - name: create-react-app
   # - name: yarn
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
