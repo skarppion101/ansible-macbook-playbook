@@ -80,7 +80,7 @@ homebrew_cask_apps:
   - keepassx
   - qbittorrent
   - vk-messenger
-  - 1password-beta
+  - 1password
   - sublime-text
   - docker
   - xquartz
