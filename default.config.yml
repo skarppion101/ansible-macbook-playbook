@@ -97,6 +97,7 @@ homebrew_cask_apps:
   - steam
   - battle-net
   - charles
+  - microsoft-remote-desktop-beta
   - tunnelblick
   - 4k-video-downloader
   - android-file-transfer
@@ -134,7 +135,7 @@ yarn_packages:
   - name: typescript
   - name: vtop
   - name: node-sass
-  - name: @angular/cli
+  - name: "@angular/cli"
   - name: gatsby-cli
   - name: create-react-app
   # - name: yarn
