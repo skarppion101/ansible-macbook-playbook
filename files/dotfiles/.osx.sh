@@ -145,7 +145,7 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
 # Configure menu bar options
-defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/TextInput.menu"
 defaults write com.apple.menuextra.battery ShowPercent YES
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
@@ -305,8 +305,8 @@ fi
 #defaults write com.apple.dock wvous-br-corner -int 2
 #defaults write com.apple.dock wvous-br-modifier -int 0
 # Top right screen corner → Put display to sleep
-#defaults write com.apple.dock wvous-tr-corner -int 10
-#defaults write com.apple.dock wvous-tr-modifier -int 0
+defaults write com.apple.dock wvous-tr-corner -int 10
+defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Desktop
 #defaults write com.apple.dock wvous-bl-corner -int 4
 #defaults write com.apple.dock wvous-bl-modifier -int 0
