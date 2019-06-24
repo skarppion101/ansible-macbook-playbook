@@ -81,6 +81,7 @@ homebrew_cask_apps:
   - qbittorrent
   - vk-messenger
   - 1password
+  - monero-wallet
   - sublime-text
   - docker
   - xquartz
