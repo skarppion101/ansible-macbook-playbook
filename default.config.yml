@@ -60,6 +60,7 @@ homebrew_installed_packages:
   - fontconfig
   - freetype
   - faac
+  - dart
   - git-flow
   - usbmuxd
   - libimobiledevice
@@ -72,6 +73,7 @@ homebrew_taps:
   - homebrew/cask
   - spectralkh/tap
   - homebrew/cask-versions
+  - dart-lang/dart
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
