@@ -436,6 +436,28 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 defaults write com.google.Chrome DisablePrintPreview -bool true
 
 ###############################################################################
+# Common                                                                      #
+###############################################################################
+
+# Disable animations when opening a Quick Look window
+defaults write -g QLPanelAnimationDuration -float 0
+
+# Disable animations when opening and closing windows
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+
+# Accelerated playback when adjusting the window size (Cocoa applications)
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+
+# Disable animation when opening the Info window in Finder (cmd⌘ + i)
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Disable animations when you open an application from the Dock
+defaults write com.apple.dock launchanim -bool false
+
+# Make all animations faster that are used by Mission Control
+defaults write com.apple.dock expose-animation-duration -float 0
+
+###############################################################################
 # Kill/restart affected applications                                          #
 ###############################################################################
 
