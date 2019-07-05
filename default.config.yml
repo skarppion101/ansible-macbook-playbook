@@ -141,6 +141,7 @@ yarn_packages:
   - name: "@angular/cli"
   - name: gatsby-cli
   - name: create-react-app
+  - name: react-native-cli
   # - name: yarn
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
