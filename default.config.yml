@@ -83,6 +83,7 @@ homebrew_cask_apps:
   - qbittorrent
   - vk-messenger
   - 1password
+  - flutter
   - monero-wallet
   - sublime-text
   - docker
