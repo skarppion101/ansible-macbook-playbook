@@ -29,9 +29,9 @@ fi
 
 # Set standby delay to 24 hours (default is 1 hour)
 # You can check current values with `pmset -g`.
-if [[ "$RUN_AS_ROOT" = true ]]; then
-  sudo pmset -a standbydelay 86400
-fi
+#if [[ "$RUN_AS_ROOT" = true ]]; then
+#  sudo pmset -a standbydelay 86400
+#fi
 
 # Disable system sleep (helpful if you're usually plugged into mains power).
 #if [[ "$RUN_AS_ROOT" = true ]]; then
@@ -52,9 +52,7 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
-if [[ "$RUN_AS_ROOT" = true ]]; then
-  sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
-fi
+defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Restart automatically if the computer freezes
 #if [[ "$RUN_AS_ROOT" = true ]]; then
@@ -82,23 +80,21 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # SSD-specific tweaks                                                         #
 ###############################################################################
 
-if [[ "$RUN_AS_ROOT" = true ]]; then
-  # Disable local Time Machine snapshots
-  sudo tmutil disablelocal
+# Disable local Time Machine snapshots
+sudo tmutil disablelocal
 
-  # Disable hibernation (speeds up entering sleep mode)
-  sudo pmset -a hibernatemode 0
+# Disable hibernation (speeds up entering sleep mode)
+sudo pmset -a hibernatemode 0
 
-  # Remove the sleep image file to save disk space
-  sudo rm /Private/var/vm/sleepimage
-  # Create a zero-byte file instead...
-  sudo touch /Private/var/vm/sleepimage
-  # ...and make sure it can’t be rewritten
-  sudo chflags uchg /Private/var/vm/sleepimage
+# Remove the sleep image file to save disk space
+sudo rm /Private/var/vm/sleepimage
+# Create a zero-byte file instead...
+sudo touch /Private/var/vm/sleepimage
+# ...and make sure it can’t be rewritten
+sudo chflags uchg /Private/var/vm/sleepimage
 
-  # Disable the sudden motion sensor as it’s not useful for SSDs
-  sudo pmset -a sms 0
-fi
+# Disable the sudden motion sensor as it’s not useful for SSDs
+sudo pmset -a sms 0
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -285,9 +281,7 @@ defaults write com.apple.dock showhidden -bool true
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Add iOS Simulator to Applications folder.
-if [[ "$RUN_AS_ROOT" = true ]]; then
-  sudo ln -sf /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app /Applications/Simulator.app
-fi
+sudo ln -sf /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app /Applications/Simulator.app
 
 # Hot corners
 # Possible values:
@@ -364,15 +358,13 @@ defaults write com.apple.mail DraftsViewerAttributes -dict-add "DisplayInThreade
 # Spotlight                                                                   #
 ###############################################################################
 
-if [[ "$RUN_AS_ROOT" = true ]]; then
-  # Disable Spotlight indexing for any volume that gets mounted and has not yet
-  # been indexed before.
-  # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-  sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+# Disable Spotlight indexing for any volume that gets mounted and has not yet
+# been indexed before.
+# Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
+sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
 
-  # Restart spotlight
-  killall mds > /dev/null 2>&1
-fi
+# Restart spotlight
+killall mds > /dev/null 2>&1
 
 ###############################################################################
 # Terminal                                                                    #
@@ -381,10 +373,8 @@ fi
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-if [[ "$RUN_AS_ROOT" = true ]]; then
-    # Enable the "Anywhere" option
-    spctl --master-disable
-fi
+# Enable the "Anywhere" option
+sudo spctl --master-disable
 
 # For Terminal theme, see: https://github.com/geerlingguy/mac-dev-playbook
 
