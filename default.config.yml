@@ -61,6 +61,7 @@ homebrew_installed_packages:
   - freetype
   - faac
   - dart
+  - rust
   - git-flow
   - usbmuxd
   - libimobiledevice
