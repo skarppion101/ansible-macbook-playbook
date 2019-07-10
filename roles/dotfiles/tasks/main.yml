@@ -7,9 +7,3 @@
     variable_start_string: "ƒƒƒ"
   with_items: "{{ dotfiles_files }}"
   become: no
-
-- name: Fix permissions
-  file:
-    path: "{{ dotfiles_home }}/.osx.sh"
-    mode: 0777
-  become: no

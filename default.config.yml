@@ -13,7 +13,6 @@ dotfiles_files:
   - .osx.sh
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
   - autoconf
   - ansible-lint
   - node
@@ -116,7 +115,7 @@ homebrew_cask_apps:
   - vagrant
   - skype
 
-osx_script: "~/.osx.sh --no-restart"
+osx_script: "./files/dotfiles/.osx.sh"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
