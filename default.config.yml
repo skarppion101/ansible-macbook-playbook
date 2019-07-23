@@ -28,6 +28,7 @@ homebrew_installed_packages:
   - scala
   - erlang
   - ghc
+  - wireshark
   - consul
   - gpg
   - hub
