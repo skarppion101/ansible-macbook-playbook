@@ -98,6 +98,7 @@ homebrew_cask_apps:
   - java
   - keka
   - jetbrains-toolbox
+  - wireshark
   - macdown
   - steam
   - battle-net
