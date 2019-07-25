@@ -74,6 +74,7 @@ homebrew_taps:
   - homebrew/cask
   - spectralkh/tap
   - homebrew/cask-versions
+  - adoptopenjdk/openjdk
   - dart-lang/dart
 
 homebrew_cask_appdir: /Applications
@@ -96,6 +97,7 @@ homebrew_cask_apps:
   - google-cloud-sdk
   - iina
   - java
+  - adoptopenjdk11
   - keka
   - jetbrains-toolbox
   - wireshark
