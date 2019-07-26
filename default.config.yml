@@ -92,7 +92,7 @@ homebrew_cask_apps:
   - xquartz
   - dropbox
   - zoomus
-  - dotnet
+  - dotnet-sdk
   - firefox-developer-edition
   - google-chrome-beta
   - google-cloud-sdk
