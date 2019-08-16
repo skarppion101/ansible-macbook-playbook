@@ -94,6 +94,7 @@ homebrew_cask_apps:
   - zoomus
   - dotnet-sdk
   - firefox-developer-edition
+  - yandex
   - google-chrome-beta
   - google-cloud-sdk
   - iina
