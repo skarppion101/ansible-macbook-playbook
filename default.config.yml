@@ -138,6 +138,8 @@ yarn_packages:
   - name: typescript
   - name: vtop
   - name: node-sass
+  - name: now
+  - name: webtorrent-cli
   - name: "@angular/cli"
   - name: gatsby-cli
   - name: create-react-app
