@@ -79,17 +79,14 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - telegram
   - whatsapp
   - keepassx
   - qbittorrent
   - vk-messenger
   - 1password
   - flutter
-  - monero-wallet
   - sublime-text
   - docker
-  - xquartz
   - dropbox
   - zoomus
   - dotnet-sdk
@@ -104,21 +101,21 @@ homebrew_cask_apps:
   - wireshark
   - macdown
   - steam
-  - battle-net
+  - kitematic
   - charles
   - microsoft-remote-desktop-beta
   - tunnelblick
   - 4k-video-downloader
-  - android-file-transfer
-  - nosleep
   - teamviewer
   - tor-browser
   - zeplin
   - postman
-  - tunnelbear
   - handbrake
   - vagrant
   - skype
+  - xquartz
+  - tunnelbear
+  - telegram
 
 osx_script: "./files/dotfiles/.osx.sh"
 
@@ -135,9 +132,6 @@ gem_packages: []
   #   version: "~> 1.15.1" # default: N/A
 npm_packages:
   - name: yarn
-  # - name: yarn
-  #   state: present # present/absent/latest, default: present
-  #   version: "^2.6" # default: N/A
 yarn_packages:
   - name: bower
   - name: pm2
@@ -148,9 +142,6 @@ yarn_packages:
   - name: gatsby-cli
   - name: create-react-app
   - name: react-native-cli
-  # - name: yarn
-  #   state: present # present/absent/latest, default: present
-  #   version: "^2.6" # default: N/A
 pip_packages: []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
