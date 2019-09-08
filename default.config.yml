@@ -81,7 +81,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - whatsapp
   - keepassx
-  - qbittorrent
+  - folx
   - vk-messenger
   - 1password
   - flutter
