@@ -142,6 +142,7 @@ yarn_packages:
   - name: node-sass
   - name: now
   - name: webtorrent-cli
+  - name: electron
   - name: "@angular/cli"
   - name: gatsby-cli
   - name: create-react-app
