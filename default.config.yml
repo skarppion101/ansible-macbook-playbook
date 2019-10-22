@@ -107,6 +107,7 @@ homebrew_cask_apps:
   - charles
   - microsoft-remote-desktop-beta
   - tunnelblick
+  - virtualbox
   - 4k-video-downloader
   - teamviewer
   - tor-browser
