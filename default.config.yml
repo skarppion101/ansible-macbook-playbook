@@ -1,3 +1,4 @@
+# https://e.mail.ru/compose/?to={to}&cc={cc}&bcc={bcc}&subject={subject}&body={body}
 ---
 configure_dotfiles: yes
 configure_sudoers: yes
