@@ -154,7 +154,8 @@ yarn_packages:
   - name: create-react-app
   - name: react-native-cli
   - name: verdaccio
-# yarn global add bower pm2 typescript vtop node-sass now webtorrent-cli electron "@angular/cli" gatsby-cli create-react-app react-native-cli verdaccio
+  - name: json
+# yarn global add bower pm2 typescript vtop node-sass now webtorrent-cli electron "@angular/cli" gatsby-cli create-react-app react-native-cli verdaccio json
 pip_packages: []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
