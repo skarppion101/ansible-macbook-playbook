@@ -70,6 +70,7 @@ homebrew_installed_packages:
   - ideviceinstaller
   - ios-deploy
   - cocoapods
+  - fish
   - sshpass
 
 homebrew_taps:
