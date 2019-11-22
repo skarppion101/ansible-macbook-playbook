@@ -376,8 +376,6 @@ defaults write com.apple.terminal StringEncodings -array 4
 # Enable the "Anywhere" option
 sudo spctl --master-disable
 
-# For Terminal theme, see: https://github.com/geerlingguy/mac-dev-playbook
-
 ###############################################################################
 # Activity Monitor                                                            #
 ###############################################################################
@@ -459,3 +457,7 @@ if [[ ! ($* == *--no-restart*) ]]; then
 fi
 
 printf "Please log out and log back in to make all settings take effect.\n"
+
+# Make "fish" a default shell
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish
