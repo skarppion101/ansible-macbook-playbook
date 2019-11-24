@@ -64,6 +64,7 @@ homebrew_installed_packages:
   - faac
   - dart
   - rust
+  - rustup
   - git-flow
   - usbmuxd
   - libimobiledevice
