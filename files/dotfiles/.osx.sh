@@ -251,7 +251,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 ###############################################################################
 
 # Set the icon size of Dock items
-defaults write com.apple.dock tilesize -int 55
+defaults write com.apple.dock tilesize -int 75
 
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
@@ -299,7 +299,7 @@ sudo ln -sf /Applications/Xcode.app/Contents/Developer/Applications/Simulator.ap
 #defaults write com.apple.dock wvous-br-corner -int 2
 #defaults write com.apple.dock wvous-br-modifier -int 0
 # Top right screen corner → Put display to sleep
-defaults write com.apple.dock wvous-tr-corner -int 10
+#defaults write com.apple.dock wvous-tr-corner -int 10
 defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Desktop
 #defaults write com.apple.dock wvous-bl-corner -int 4
