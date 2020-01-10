@@ -14,6 +14,16 @@ dotfiles_files:
   - .vimrc
   - .osx.sh
 
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - spectralkh/tap
+  - homebrew/cask-versions
+  - dart-lang/dart
+  - heroku/brew
+  - hudochenkov/sshpass
+#  - adoptopenjdk/openjdk
+
 homebrew_installed_packages:
   - autoconf
   - ansible-lint
@@ -54,6 +64,7 @@ homebrew_installed_packages:
   - pkg-config
   - perl
   - libuv
+  - heroku
   - jpeg
   - watchman
   - imagemagick
@@ -72,15 +83,6 @@ homebrew_installed_packages:
   - cocoapods
   - fish
   - sshpass
-
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
-  - spectralkh/tap
-  - homebrew/cask-versions
-  - dart-lang/dart
-  - hudochenkov/sshpass
-#  - adoptopenjdk/openjdk
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
