@@ -103,6 +103,7 @@ homebrew_cask_apps:
   - brave-browser-beta
   - google-cloud-sdk
   - iina
+  - anki
   - java
   - adoptopenjdk
   - adoptopenjdk8
