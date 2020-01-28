@@ -101,30 +101,31 @@ homebrew_cask_apps:
   - dotnet-sdk
   - firefox-developer-edition
   - google-chrome-beta
-  - brave-browser-beta
   - google-cloud-sdk
   - iina
   - anki
   - java
   - adoptopenjdk
   - adoptopenjdk8
-  - keka
+  - keka-beta
   - jetbrains-toolbox
   - wireshark
   - macdown
   - steam
   - kitematic
-  - charles
+  - charles-beta
   - microsoft-remote-desktop-beta
   - tunnelblick
-  - virtualbox
+  - virtualbox-beta
   - 4k-video-downloader
   - teamviewer
   - tor-browser
   - zeplin
   - postman
-  - handbrake
+  - handbrake-nightly
   - vagrant
+  - vagrant-manager
+  - adobe-creative-cloud
   - skype
   - xquartz
   - tunnelbear
