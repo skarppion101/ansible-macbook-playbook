@@ -94,7 +94,7 @@ homebrew_cask_apps:
   - vk-messenger
   - 1password
   - flutter
-  - visual-studio-code
+  - visual-studio-code-insiders
   - docker
   - dropbox
   - zoomus
