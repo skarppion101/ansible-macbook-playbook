@@ -36,6 +36,7 @@ homebrew_installed_packages:
   - gifsicle
   - git
   - gcc
+  - cmake
   - go
   - scala
   - erlang
