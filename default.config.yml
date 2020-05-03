@@ -37,6 +37,8 @@ homebrew_installed_packages:
   - git
   - gcc
   - cmake
+  - asio
+  - boost
   - go
   - scala
   - erlang
