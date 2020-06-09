@@ -116,6 +116,8 @@ homebrew_cask_apps:
   - macdown
   - steam
   - kitematic
+  - webtorrent
+  - radarr
   - charles-beta
   - microsoft-remote-desktop-beta
   - tunnelblick
