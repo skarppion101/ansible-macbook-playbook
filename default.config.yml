@@ -71,6 +71,7 @@ homebrew_installed_packages:
   - jpeg
   - watchman
   - imagemagick
+  - graphicsmagick
   - ffmpeg
   - sbt
   - fontconfig
