@@ -109,6 +109,7 @@ homebrew_cask_apps:
   - iina
   - anki
   - java
+  - usenapp
   - adoptopenjdk
   - adoptopenjdk8
   - keka-beta
