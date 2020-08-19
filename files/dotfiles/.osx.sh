@@ -20,7 +20,11 @@ if [[ $EUID -ne 0 ]]; then
 else
   RUN_AS_ROOT=true
   # Update existing `sudo` timestamp until `.osx` has finished
-  while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+  while true; do
+    sudo -n true
+    sleep 60
+    kill -0 "$$" || exit
+  done 2>/dev/null &
 fi
 
 ###############################################################################
