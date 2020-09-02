@@ -69,3 +69,7 @@ It's my hope that I can get the rest of these things wrapped up into Ansible pla
 ## Ansible for DevOps
 
 Check out [Ansible for DevOps](https://www.ansiblefordevops.com/), which teaches you how to automate almost anything with Ansible.
+
+
+## Running manually
+`yarn global add bower pm2 typescript vtop node-sass now webtorrent-cli electron "@angular/cli" gatsby-cli create-react-app react-native-cli verdaccio json`

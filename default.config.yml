@@ -1,11 +1,12 @@
-# https://chrome.google.com/webstore/detail/mailto/gppbppehiogfokmpligejhaepeopajdf
-# https://e.mail.ru/compose/?to={to}
----
+# --- Global config ---
 configure_dotfiles: yes
 configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
 
+
+# --- System hidden files
+osx_script: "./files/dotfiles/.osx.sh"
 dotfiles_files:
   - .bash_profile
   - .gitignore
@@ -14,6 +15,8 @@ dotfiles_files:
   - .vimrc
   - .osx.sh
 
+
+# --- Homebrew sources ---
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
@@ -22,8 +25,9 @@ homebrew_taps:
   - dart-lang/dart
   - heroku/brew
   - hudochenkov/sshpass
-#  - adoptopenjdk/openjdk
 
+
+# --- Homebrew programs ---
 homebrew_installed_packages:
   - autoconf
   - ansible-lint
@@ -89,58 +93,158 @@ homebrew_installed_packages:
   - sshpass
   - libsass
 
-homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - whatsapp
-  - intel-power-gadget
-  - keepassx
-  - folx
-  - vk-messenger
-  - 1password
-  - flutter
-  - visual-studio-code-insiders
-  - docker
-  - dropbox
-  - zoomus
-  - dotnet-sdk
-  - firefox-developer-edition
-  - opera-beta
-  - google-chrome-beta
-  - google-cloud-sdk
-  - iina
-  - anki
-  - java
-  - usenapp
-  - adoptopenjdk
-  - adoptopenjdk8
-  - keka-beta
-  - jetbrains-toolbox
-  - wireshark
-  - macdown
-  - steam
-  - kitematic
-  - webtorrent
-  - OnyX
-  - radarr
-  - charles-beta
-  - microsoft-remote-desktop-beta
-  - tunnelblick
-  - virtualbox-beta
-  - 4k-video-downloader
-  - teamviewer
-  - tor-browser
-  - zeplin
-  - postman
-  - handbrake-nightly
-  - vagrant
-  - vagrant-manager
-  - adobe-creative-cloud
-  - skype
-  - xquartz
-  - tunnelbear
-  - telegram
 
-osx_script: "./files/dotfiles/.osx.sh"
+# --- Homebrew base applications dir ---
+homebrew_cask_appdir: /Applications
+
+
+# --- Homebrew applications ---
+# TODO: Add links or descriptions
+homebrew_cask_apps:
+  - name: whatsapp
+    description: "https://whatsapp.com"
+
+  - name: intel-power-gadget
+    description: "https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html"
+
+  - name: keepassx
+    description: ""
+
+  - name: folx
+    description: ""
+
+  - name: vk-messenger
+    description: ""
+
+  - name: 1password
+    description: ""
+
+  - name: flutter
+    description: ""
+
+  - name: visual-studio-code-insiders
+    description: ""
+
+  - name: docker
+    description: ""
+
+  - name: dropbox
+    description: ""
+
+  - name: zoomus
+    description: ""
+
+  - name: dotnet-sdk
+    description: ""
+
+  - name: firefox-developer-edition
+    description: ""
+
+  - name: opera-beta
+    description: ""
+
+  - name: google-chrome-beta
+    description: ""
+
+  - name: google-cloud-sdk
+    description: ""
+
+  - name: iina
+    description: ""
+
+  - name: anki
+    description: ""
+
+  - name: java
+    description: ""
+
+  - name: usenapp
+    description: ""
+
+  - name: adoptopenjdk
+    description: ""
+
+  - name: adoptopenjdk8
+    description: ""
+
+  - name: keka-beta
+    description: ""
+
+  - name: jetbrains-toolbox
+    description: ""
+
+  - name: wireshark
+    description: ""
+
+  - name: macdown
+    description: ""
+
+  - name: steam
+    description: ""
+
+  - name: kitematic
+    description: ""
+
+  - name: webtorrent
+    description: ""
+
+  - name: OnyX
+    description: ""
+
+  - name: radarr
+    description: ""
+
+  - name: charles-beta
+    description: ""
+
+  - name: microsoft-remote-desktop-beta
+    description: ""
+
+  - name: tunnelblick
+    description: ""
+
+  - name: virtualbox-beta
+    description: ""
+
+  - name: 4k-video-downloader
+    description: ""
+
+  - name: teamviewer
+    description: ""
+
+  - name: tor-browser
+    description: ""
+
+  - name: zeplin
+    description: ""
+
+  - name: postman
+    description: ""
+
+  - name: handbrake-nightly
+    description: ""
+
+  - name: vagrant
+    description: ""
+
+  - name: vagrant-manager
+    description: ""
+
+  - name: adobe-creative-cloud
+    description: ""
+
+  - name: skype
+    description: ""
+
+  - name: xquartz
+    description: ""
+
+  - name: tunnelbear
+    description: ""
+
+  - name: telegram
+    description: ""
+
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
@@ -153,28 +257,65 @@ gem_packages: []
   # - name: bundler
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
+
+
+# --- NPM global packages ---
 npm_packages:
   - name: yarn
+    description: ""
+
+
+# --- Yarn global packages ---
 yarn_packages:
   - name: bower
+    description: ""
+
   - name: pm2
+    description: ""
+
   - name: typescript
+    description: ""
+
   - name: vtop
+    description: ""
+
   - name: node-sass
+    description: ""
+
   - name: now
+    description: ""
+
   - name: webtorrent-cli
+    description: ""
+
   - name: electron
+    description: ""
+
   - name: "@angular/cli"
+    description: ""
+
   - name: gatsby-cli
+    description: ""
+
   - name: create-react-app
+    description: ""
+
   - name: react-native-cli
+    description: ""
+
   - name: verdaccio
+    description: ""
+
   - name: json
-# yarn global add bower pm2 typescript vtop node-sass now webtorrent-cli electron "@angular/cli" gatsby-cli create-react-app react-native-cli verdaccio json
+    description: ""
+
+
+# --- Pip global packages ---
 pip_packages: []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
 
-# Glob pattern to ansible task files to run after all other tasks are finished.
+
+# --- Glob pattern to ansible task files to run after all other tasks are finished ---
 post_provision_tasks: []
