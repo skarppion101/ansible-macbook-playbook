@@ -120,6 +120,7 @@ homebrew_cask_apps:
   - steam
   - kitematic
   - webtorrent
+  - OnyX
   - radarr
   - charles-beta
   - microsoft-remote-desktop-beta
