@@ -116,6 +116,9 @@ homebrew_cask_apps:
   - name: vk-messenger
     description: ""
 
+  - name: mongodb-compass
+    description: "Mongodb GUI"
+
   - name: 1password
     description: ""
 
