@@ -92,6 +92,7 @@ homebrew_installed_packages:
   - fish
   - sshpass
   - libsass
+  - firebase-cli
 
 
 # --- Homebrew base applications dir ---
