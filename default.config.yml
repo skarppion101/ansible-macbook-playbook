@@ -201,13 +201,7 @@ homebrew_cask_apps:
   - name: charles-beta
     description: ""
 
-  - name: microsoft-remote-desktop-beta
-    description: ""
-
   - name: tunnelblick
-    description: ""
-
-  - name: virtualbox-beta
     description: ""
 
   - name: 4k-video-downloader
