@@ -271,9 +271,6 @@ npm_packages:
   - name: yarn
     description: ""
 
-
-# --- Yarn global packages ---
-yarn_packages:
   - name: bower
     description: ""
 
