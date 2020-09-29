@@ -111,6 +111,9 @@ homebrew_cask_apps:
   - name: keepassx
     description: ""
 
+  - name: gfxcardstatus
+    description: "MacBook Pro dedicated graphic card manual switcher"
+
   - name: folx
     description: ""
 
