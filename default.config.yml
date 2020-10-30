@@ -93,6 +93,7 @@ homebrew_installed_packages:
   - sshpass
   - libsass
   - firebase-cli
+  - grpcurl
 
 
 # --- Homebrew base applications dir ---
