@@ -94,6 +94,7 @@ homebrew_installed_packages:
   - libsass
   - firebase-cli
   - grpcurl
+  - kubectl
 
 
 # --- Homebrew base applications dir ---
