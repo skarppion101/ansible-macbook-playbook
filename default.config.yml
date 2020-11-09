@@ -251,6 +251,9 @@ homebrew_cask_apps:
   - name: turbo-boost-switcher
     description: "Disables macbook turbo-boost feature and runs CPU with the default cpu-clock"
 
+  - name: termius
+    description: "SSH client for mac and iPhone"
+
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
