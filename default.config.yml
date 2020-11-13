@@ -95,6 +95,7 @@ homebrew_installed_packages:
   - firebase-cli
   - grpcurl
   - kubectl
+  - protoc
 
 
 # --- Homebrew base applications dir ---
