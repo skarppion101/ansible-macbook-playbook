@@ -96,6 +96,7 @@ homebrew_installed_packages:
   - grpcurl
   - kubectl
   - protoc
+  - molecule
 
 
 # --- Homebrew base applications dir ---
