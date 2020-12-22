@@ -1,6 +1,6 @@
 ---
-- hosts: localhost
+- name: Homebrew
+  hosts: localhost
   connection: local
-
   roles:
-    - geerlingguy.homebrew
+    - role: geerlingguy.homebrew

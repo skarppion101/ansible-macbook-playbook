@@ -14,11 +14,23 @@ This playbook installs and configures most of the software I use on my Mac for w
 
 ### Running a specific set of tagged tasks
 
-You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag. The tags available are `dotfiles`, `homebrew`, `extra-packages` and `osx`.
+You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag.
+The tags available are:
 
-    ansible-playbook main.yml -i inventory -K --tags "dotfiles,homebrew"
-    
-    ansible-playbook main.yml -i inventory -K --tags "extra-packages"
+ * dotfiles
+ * homebrew
+   * homebrew_casks
+   * homebrew_programs
+ * extra-packages
+ * osx
+
+Example 1 - `ansible-playbook main.yml -i inventory -K --tags "dotfiles, homebrew"`
+
+Example 2 - `ansible-playbook main.yml -i inventory -K --tags "homebrew, homebrew_programs"`
+
+Example 3 - `ansible-playbook main.yml -i inventory -K --tags "homebrew, homebrew_casks"`
+
+Example 4 - `ansible-playbook main.yml -i inventory -K --tags "extra-packages, osx"`
 
 ## Overriding Defaults
 

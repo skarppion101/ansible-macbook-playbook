@@ -108,6 +108,10 @@ homebrew_installed_packages:
 homebrew_cask_appdir: /Applications
 
 
+# --- Homebrew should upgrade all packages ---
+homebrew_upgrade_all_packages: yes
+
+
 # --- Homebrew applications ---
 # TODO: Add links or descriptions
 homebrew_cask_apps:
