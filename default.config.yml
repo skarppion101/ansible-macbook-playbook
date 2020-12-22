@@ -179,7 +179,10 @@ homebrew_basic_cask_apps:
     description: ""
 
   - name: telegram
-    description: ""
+    description: "Best messenger ever"
+
+  - name: slack
+    description: "Corporate messenger app"
 
 
 # --- Homebrew extra applications ---
