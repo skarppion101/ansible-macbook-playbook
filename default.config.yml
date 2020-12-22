@@ -109,113 +109,53 @@ homebrew_cask_appdir: /Applications
 
 
 # --- Homebrew should upgrade all packages ---
-homebrew_upgrade_all_packages: yes
+homebrew_upgrade_all_packages: no
 
 
-# --- Homebrew applications ---
-# TODO: Add links or descriptions
-homebrew_cask_apps:
+# --- Homebrew basic applications ---
+homebrew_basic_cask_apps:
   - name: whatsapp
+    install_options: 'cask'
     description: "https://whatsapp.com"
 
-  - name: intel-power-gadget
-    description: "https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html"
-
-  - name: keepassx
-    description: ""
-
-  - name: gfxcardstatus
-    description: "MacBook Pro dedicated graphic card manual switcher"
-
   - name: folx
-    description: ""
-
-  - name: vk-messenger
-    description: ""
-
-  - name: mongodb-compass
-    description: "Mongodb GUI"
+    description: "Torrent client"
 
   - name: 1password
-    description: ""
-
-  - name: flutter
-    description: ""
-
-  - name: visual-studio-code-insiders
-    description: ""
+    description: "Password manager"
 
   - name: docker
-    description: ""
+    description: "Container runner"
 
   - name: dropbox
-    description: ""
+    description: "Online sync folder"
 
   - name: zoomus
-    description: ""
-
-  - name: dotnet-sdk
-    description: ""
+    description: "Skype analog"
 
   - name: firefox-developer-edition
-    description: ""
+    description: "Best browser for debugging"
 
-  - name: opera-beta
-    description: ""
+  - name: opera
+    description: "Browser with VPN"
 
-  - name: google-chrome-beta
-    description: ""
-
-  - name: google-cloud-sdk
-    description: ""
+  - name: google-chrome
+    description: "Default browser"
 
   - name: iina
-    description: ""
-
-  - name: anki
-    description: ""
-
-  - name: java
-    description: ""
+    description: "Media Player"
 
   - name: usenapp
-    description: ""
-
-  - name: adoptopenjdk
-    description: ""
-
-  - name: adoptopenjdk8
-    description: ""
+    description: "Check OSX .pkg scripts before executing"
 
   - name: keka-beta
-    description: ""
+    description: "Archive manager"
 
   - name: jetbrains-toolbox
-    description: ""
-
-  - name: wireshark
-    description: ""
+    description: "IDEs toolbox"
 
   - name: macdown
-    description: ""
-
-  - name: steam
-    description: ""
-
-  - name: kitematic
-    description: ""
-
-  - name: webtorrent
-    description: ""
-
-  - name: OnyX
-    description: ""
-
-  - name: radarr
-    description: ""
-
-  - name: charles-beta
-    description: ""
+    description: "MarkDown editor"
 
   - name: tunnelblick
     description: ""
@@ -229,13 +169,79 @@ homebrew_cask_apps:
   - name: tor-browser
     description: ""
 
-  - name: zeplin
-    description: ""
-
   - name: postman
     description: ""
 
-  - name: handbrake-nightly
+  - name: skype
+    description: ""
+
+  - name: tunnelbear
+    description: ""
+
+  - name: telegram
+    description: ""
+
+
+# --- Homebrew extra applications ---
+homebrew_extra_cask_apps:
+  - name: intel-power-gadget
+    description: "https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html"
+
+  - name: keepassx
+    description: ""
+
+  - name: gfxcardstatus
+    description: "MacBook Pro dedicated graphic card manual switcher"
+
+  - name: vk-messenger
+    description: "VK messenger"
+
+  - name: mongodb-compass
+    description: "Mongodb GUI"
+
+  - name: flutter
+    description: "Mobile cross-platform framework"
+
+  - name: dotnet-sdk
+    description: ""
+
+  - name: google-cloud-sdk
+    description: ""
+
+  - name: anki
+    description: "Help to study new languages"
+
+  - name: java
+    description: ""
+
+  - name: adoptopenjdk
+    description: ""
+
+  - name: adoptopenjdk8
+    description: ""
+
+  - name: wireshark
+    description: "Wi-Fi packets capturing"
+
+  - name: steam
+    description: "Games"
+
+  - name: kitematic
+    description: ""
+
+  - name: OnyX
+    description: "CleanMyMac free analog"
+
+  - name: radarr
+    description: ""
+
+  - name: charles
+    description: ""
+
+  - name: zeplin
+    description: ""
+
+  - name: handbrake
     description: ""
 
   - name: vagrant
@@ -247,16 +253,7 @@ homebrew_cask_apps:
   - name: adobe-creative-cloud
     description: ""
 
-  - name: skype
-    description: ""
-
   - name: xquartz
-    description: ""
-
-  - name: tunnelbear
-    description: ""
-
-  - name: telegram
     description: ""
 
   - name: turbo-boost-switcher

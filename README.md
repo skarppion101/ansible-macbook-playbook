@@ -19,18 +19,21 @@ The tags available are:
 
  * dotfiles
  * homebrew
-   * homebrew_casks
-   * homebrew_programs
+   * basic_casks
+   * homebrew_extra_casks
+   * programs
  * extra-packages
  * osx
 
 Example 1 - `ansible-playbook main.yml -i inventory -K --tags "dotfiles, homebrew"`
 
-Example 2 - `ansible-playbook main.yml -i inventory -K --tags "homebrew, homebrew_programs"`
+Example 2 - `ansible-playbook main.yml -i inventory -K --tags "homebrew, programs"`
 
-Example 3 - `ansible-playbook main.yml -i inventory -K --tags "homebrew, homebrew_casks"`
+Example 3 - `ansible-playbook main.yml -i inventory -K --tags "homebrew, basic_casks"`
 
-Example 4 - `ansible-playbook main.yml -i inventory -K --tags "extra-packages, osx"`
+Example 4 - `ansible-playbook main.yml -i inventory -K --tags "homebrew, extra_casks"`
+
+Example 5 - `ansible-playbook main.yml -i inventory -K --tags "extra-packages, osx"`
 
 ## Overriding Defaults
 
