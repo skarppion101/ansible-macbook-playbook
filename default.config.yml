@@ -87,6 +87,7 @@ homebrew_installed_packages:
   - gflags
   - protobuf
   - re2
+  - cmake
   - git-flow
   - usbmuxd
   - libimobiledevice
@@ -139,9 +140,6 @@ homebrew_cask_apps:
 
   - name: visual-studio-code-insiders
     description: ""
-
-  - name: cmake
-    description: "https://cmake.org"
 
   - name: docker
     description: ""
