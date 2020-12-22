@@ -271,6 +271,7 @@ gem_packages: []
 
 
 # --- NPM global packages ---
+# npm i -g yarn bower pm2 typescript vtop node-sass now electron create-react-app json react-native-cli gatsby-cli @angular/cli
 npm_packages:
   - name: yarn
     description: ""
