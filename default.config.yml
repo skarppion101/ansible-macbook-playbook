@@ -40,7 +40,6 @@ homebrew_installed_packages:
   - gifsicle
   - git
   - gcc
-  - cmake
   - asio
   - boost
   - go
@@ -83,6 +82,11 @@ homebrew_installed_packages:
   - faac
   - dart
   - rust
+  - automake
+  - abseil
+  - gflags
+  - protobuf
+  - re2
   - git-flow
   - usbmuxd
   - libimobiledevice
@@ -135,6 +139,9 @@ homebrew_cask_apps:
 
   - name: visual-studio-code-insiders
     description: ""
+
+  - name: cmake
+    description: "https://cmake.org"
 
   - name: docker
     description: ""
