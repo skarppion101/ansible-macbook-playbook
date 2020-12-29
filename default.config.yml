@@ -65,7 +65,6 @@ homebrew_installed_packages:
   - vim
   - yasm
   - youtube-dl
-  - unrar
   - netdata
   - pkg-config
   - perl
@@ -99,9 +98,6 @@ homebrew_installed_packages:
   - libsass
   - firebase-cli
   - grpcurl
-  - kubectl
-  - protoc
-  - molecule
   - awscli
 
 
@@ -122,7 +118,7 @@ homebrew_basic_cask_apps:
   - name: folx
     description: "Torrent client"
 
-  - name: 1password
+  - name: 1password-beta
     description: "Password manager"
 
   - name: docker
@@ -156,25 +152,25 @@ homebrew_basic_cask_apps:
     description: "IDEs toolbox"
 
   - name: tunnelblick
-    description: ""
+    description: "VPN client"
 
   - name: 4k-video-downloader
-    description: ""
+    description: "Youtube video downloader"
 
   - name: teamviewer
-    description: ""
+    description: "Remote desktop controller"
 
   - name: tor-browser
-    description: ""
+    description: "Anonymous browser"
 
   - name: postman
-    description: ""
+    description: "HTTP client"
 
   - name: skype
-    description: ""
+    description: "VoIp telephone client"
 
   - name: tunnelbear
-    description: ""
+    description: "Free VPN service"
 
   - name: telegram
     description: "Best messenger ever"
