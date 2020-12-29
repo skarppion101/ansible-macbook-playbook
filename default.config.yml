@@ -99,7 +99,6 @@ homebrew_installed_packages:
   - libsass
   - firebase-cli
   - grpcurl
-  - awscli
 
 
 # --- Homebrew base applications dir ---
@@ -327,10 +326,22 @@ npm_packages:
 
 
 # --- Pip global packages ---
-pip_packages: []
-  # - name: mkdocs
-  #   state: present # present/absent/latest, default: present
-  #   version: "0.16.3" # default: N/A
+pip_packages:
+  - name: docker
+    description: "Docker SDK for Python"
+    executable: pip3
+
+  - name: docker-compose
+    description: "Docker-compose library"
+    executable: pip3
+
+  - name: awscli
+    description: "AWS cli"
+    executable: pip3
+
+  - name: awscli-local
+    description: "AWS cli local"
+    executable: pip3
 
 
 # --- Glob pattern to ansible task files to run after all other tasks are finished ---
