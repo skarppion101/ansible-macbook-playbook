@@ -130,7 +130,7 @@ homebrew_basic_cask_apps:
   - name: dropbox
     description: "Online sync folder"
 
-  - name: zoomus
+  - name: zoom
     description: "Skype analog"
 
   - name: firefox-developer-edition
@@ -153,9 +153,6 @@ homebrew_basic_cask_apps:
 
   - name: jetbrains-toolbox
     description: "IDEs toolbox"
-
-  - name: macdown
-    description: "MarkDown editor"
 
   - name: tunnelblick
     description: ""
@@ -189,6 +186,9 @@ homebrew_basic_cask_apps:
 homebrew_extra_cask_apps:
   - name: intel-power-gadget
     description: "https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html"
+
+  - name: macdown
+    description: "MarkDown editor"
 
   - name: keepassx
     description: ""
