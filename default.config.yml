@@ -181,9 +181,6 @@ homebrew_basic_cask_apps:
   - name: karabiner-elements
     description: "Keyboard keys re-mapper"
 
-  - name: asio
-    description: "App to learn a new language"
-
 
 # --- Homebrew extra applications ---
 homebrew_extra_cask_apps:
