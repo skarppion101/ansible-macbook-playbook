@@ -207,58 +207,55 @@ homebrew_extra_cask_apps:
     description: "Mobile cross-platform framework"
 
   - name: dotnet-sdk
-    description: ""
+    description: ".NET is a free, cross-platform, open-source developer platform"
 
   - name: google-cloud-sdk
-    description: ""
+    description: "Tools and libraries for interacting with Google Cloud products and services."
 
   - name: anki
     description: "Help to study new languages"
 
   - name: java
-    description: ""
+    description: "Java is the #1 programming language and development platform"
 
   - name: adoptopenjdk
-    description: ""
+    description: "Prebuilt OpenJDK Binary"
 
   - name: adoptopenjdk8
-    description: ""
+    description: "Prebuilt OpenJDK Binary"
 
   - name: wireshark
     description: "Wi-Fi packets capturing"
 
   - name: steam
-    description: "Games"
+    description: "Video-games marketplace"
 
   - name: kitematic
-    description: ""
+    description: "Tool for docker on Mac"
 
-  - name: OnyX
+  - name: onyx
     description: "CleanMyMac free analog"
 
-  - name: radarr
-    description: ""
-
   - name: charles
-    description: ""
+    description: "HTTP package capture"
 
   - name: zeplin
-    description: ""
+    description: "Tool for designers"
 
   - name: handbrake
-    description: ""
+    description: "Video-converter"
 
   - name: vagrant
-    description: ""
+    description: "Vagrant is an open-source software product for building virtual software environments"
 
   - name: vagrant-manager
-    description: ""
+    description: "Tool for managing vagrant machines"
 
   - name: adobe-creative-cloud
-    description: ""
+    description: "Toolbox for Adobe applications and services"
 
   - name: xquartz
-    description: ""
+    description: "A version of the X.Org X Window System that runs on OS X"
 
   - name: turbo-boost-switcher
     description: "Disables macbook turbo-boost feature and runs CPU with the default cpu-clock"
