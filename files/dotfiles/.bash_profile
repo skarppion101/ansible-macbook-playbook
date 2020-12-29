@@ -61,6 +61,7 @@ function pretty() {
 
 # Tell homebrew to not autoupdate every single time I run it (just once a week).
 export HOMEBREW_AUTO_UPDATE_SECS=604800
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Turn on Git autocomplete.
 # brew_prefix=`brew --prefix`
