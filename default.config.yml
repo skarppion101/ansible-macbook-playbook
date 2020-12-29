@@ -34,6 +34,7 @@ homebrew_installed_packages:
   - ansible-lint
   - node
   - curl
+  - terraform
   - highlight
   - bash-completion
   - doxygen
