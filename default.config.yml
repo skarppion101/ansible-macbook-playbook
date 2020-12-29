@@ -102,6 +102,7 @@ homebrew_installed_packages:
   - kubectl
   - protoc
   - molecule
+  - awscli
 
 
 # --- Homebrew base applications dir ---
