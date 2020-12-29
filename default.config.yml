@@ -181,6 +181,9 @@ homebrew_basic_cask_apps:
   - name: slack
     description: "Corporate messenger app"
 
+  - name: karabiner-elements
+    description: "Keyboard keys re-mapper"
+
 
 # --- Homebrew extra applications ---
 homebrew_extra_cask_apps:
