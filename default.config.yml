@@ -29,6 +29,7 @@ homebrew_taps:
 
 # --- Homebrew programs ---
 homebrew_installed_packages:
+  - readline
   - autoconf
   - ansible-lint
   - node
