@@ -190,6 +190,12 @@ homebrew_extra_cask_apps:
   - name: macdown
     description: "MarkDown editor"
 
+  - name: notion
+    description: "Knowledge base"
+
+  - name: obsidian
+    description: "Graph knowledge base"
+
   - name: keepassx
     description: ""
 
