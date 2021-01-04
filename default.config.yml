@@ -360,6 +360,10 @@ pip_packages:
     description: "Python vagrant tool"
     executable: pip3
 
+  - name: virtualenv
+    description: "Virtual env python tool"
+    executable: pip3
+
 
 # --- Glob pattern to ansible task files to run after all other tasks are finished ---
 post_provision_tasks: []
