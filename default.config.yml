@@ -352,6 +352,14 @@ pip_packages:
     description: "AWS cli local"
     executable: pip3
 
+  - name: molecule
+    description: "Ansible testing tool"
+    executable: pip3
+
+  - name: python-vagrant
+    description: "Python vagrant tool"
+    executable: pip3
+
 
 # --- Glob pattern to ansible task files to run after all other tasks are finished ---
 post_provision_tasks: []
