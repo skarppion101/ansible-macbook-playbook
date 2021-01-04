@@ -17,23 +17,23 @@ This playbook installs and configures most of the software I use on my Mac for w
 You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook`'s `--tags` flag.
 The tags available are:
 
- * dotfiles
- * homebrew
+* dotfiles
+* dotfiles
+* homebrew
    * basic_casks
    * homebrew_extra_casks
    * programs
- * extra-packages
- * osx
+* extra-packages
+* osx
 
-Example 1 - `ansible-playbook main.yml -i inventory -K --tags "dotfiles, homebrew"`
+Some examples:
 
-Example 2 - `ansible-playbook main.yml -i inventory -K --tags "homebrew, programs"`
-
-Example 3 - `ansible-playbook main.yml -i inventory -K --tags "homebrew, basic_casks"`
-
-Example 4 - `ansible-playbook main.yml -i inventory -K --tags "homebrew, extra_casks"`
-
-Example 5 - `ansible-playbook main.yml -i inventory -K --tags "extra-packages, osx"`
+* `ansible-playbook main.yml -i inventory -K --tags "xcode-select-install"`
+* `ansible-playbook main.yml -i inventory -K --tags "dotfiles, homebrew"`
+* `ansible-playbook main.yml -i inventory -K --tags "homebrew, programs"`
+* `ansible-playbook main.yml -i inventory -K --tags "homebrew, basic_casks"`
+* `ansible-playbook main.yml -i inventory -K --tags "homebrew, extra_casks"`
+* `ansible-playbook main.yml -i inventory -K --tags "extra-packages, osx"`
 
 ## Overriding Defaults
 

@@ -2,8 +2,10 @@
 - hosts: all
   connection: local
 
+
   vars_files:
     - default.config.yml
+
 
   pre_tasks:
     - include_vars: "{{ item }}"
@@ -11,12 +13,19 @@
         - "{{ playbook_dir }}/config.yml"
       tags: ['always']
 
+
   roles:
+    - role: elliotweiser.osx-command-line-tools
+      force_install: no # if yes, removes installed version
+      tags: ['always']
+
     - role: geerlingguy.homebrew
       tags: ['homebrew']
+
     - role: dotfiles
       when: configure_dotfiles | bool
       tags: ['dotfiles']
+
 
   tasks:
     - include_tasks: tasks/ansible-setup.yml
