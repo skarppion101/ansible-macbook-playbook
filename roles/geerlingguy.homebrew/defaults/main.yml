@@ -13,11 +13,8 @@ homebrew_upgrade_all_packages: no
 
 homebrew_taps:
   - homebrew/core
-  - homebrew/cask
 
-homebrew_basic_cask_apps: []
-
-homebrew_extra_cask_apps: []
+homebrew_cask_apps: []
 
 homebrew_cask_uninstalled_apps: []
 
@@ -28,3 +25,5 @@ homebrew_use_brewfile: true
 homebrew_brewfile_dir: '~'
 
 homebrew_clear_cache: false
+
+homebrew_folders_additional: []

@@ -1,6 +1,5 @@
 ---
-- hosts: localhost
-  connection: local
+- hosts: local
 
   roles:
     - geerlingguy.homebrew

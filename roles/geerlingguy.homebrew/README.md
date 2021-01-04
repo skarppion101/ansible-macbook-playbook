@@ -44,20 +44,20 @@ Packages you would like to make sure are _uninstalled_.
 Whether to upgrade homebrew and all packages installed by homebrew. If you prefer to manually update packages via `brew` commands, leave this set to `no`.
 
     homebrew_taps:
-      - homebrew/cask
+      - homebrew/core
       - { name: my_company/internal_tap, url: 'https://example.com/path/to/tap.git' }
 
 Taps you would like to make sure Homebrew has tapped.
 
-    homebrew_basic_cask_apps:
+    homebrew_cask_apps:
       - firefox
       - { name: virtualbox, install_options:"debug,appdir=/Applications" }
 
-Apps you would like to have installed via `cask`. [Search][caskroom] for popular apps to see if they're available for install via Cask. Cask will not be used if it is not included in the list of taps in the `homebrew_taps` variable. You can optionally add flags to the install by setting an `install_options` property, and if used, you need to explicitly set the `name` for the package as well. By default, no Cask apps will be installed (`homebrew_basic_cask_apps: []`).
+Apps you would like to have installed via `cask`. [Search][caskroom] for popular apps to see if they're available for install via Cask. Cask will not be used if it is not included in the list of taps in the `homebrew_taps` variable. You can optionally add flags to the install by setting an `install_options` property, and if used, you need to explicitly set the `name` for the package as well. By default, no Cask apps will be installed (`homebrew_cask_apps: []`).
 
     homebrew_cask_accept_external_apps: true
 
-Default value is `false` and would result in interruption of further processing of the whole role (and ansible play) in case any app given in `homebrew_basic_cask_apps` is already installed without `cask`. Good for a tightly managed system.
+Default value is `false` and would result in interruption of further processing of the whole role (and ansible play) in case any app given in `homebrew_cask_apps` is already installed without `cask`. Good for a tightly managed system.
 
 Specify as `true` instead if you prefer to silently continue if any App is already installed without `cask`. Generally good for a system that is managed with `cask` / `Ansible` as well as other install methods (like manually) at the same time.
 
@@ -89,6 +89,10 @@ The user that you would like to install Homebrew as.
     homebrew_group: "{{ ansible_user_gid }}"
 
 The group that you would like to use while installing Homebrew.
+
+    homebrew_folders_additional: []
+
+Any additional folders inside `homebrew_prefix` for which to ensure homebrew user/group ownership.
 
 ## Dependencies
 
