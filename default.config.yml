@@ -41,6 +41,7 @@ homebrew_installed_packages:
   - gettext
   - gifsicle
   - git
+  - pre-commit
   - gcc
   - boost
   - go
