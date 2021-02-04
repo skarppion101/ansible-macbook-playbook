@@ -1,3 +1,6 @@
+# !!!THIS REPOSITORY IS NO LONGER ACTIVE!!!
+I've created my own [ansible-collection](https://github.com/skarppion101/ansible-collection), but will leave this repository as a public version for thouse, who might find this useful.
+
 # Mac Development Ansible Playbook
 
 This playbook installs and configures most of the software I use on my Mac for web and software development. Some things in macOS are slightly difficult to automate, so I still have some manual installation steps, but at least it's all documented here.
